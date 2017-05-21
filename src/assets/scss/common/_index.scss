@@ -1,0 +1,69 @@
+body {
+  background: $outer-bg-color;
+  color: $primary-font-color;
+  font-family: $primary-font-family;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include responsive-margin('bottom', $base-margin/2);
+}
+
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-color: $black;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  background: $white;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+header.sticky-container + main.content {
+  margin-top: $header-height;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.row {
+  position: relative;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.bg-image,
+.bg-dark,
+.bg-video {
+  color: $reverse-font-color;
+}

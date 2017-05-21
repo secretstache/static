@@ -1,0 +1,10 @@
+section.hero-unit {
+  position: relative;
+  height: calc(100vh - #{$header-height});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .row {
+  	width: 100%;
+  }
+}

@@ -1,0 +1,107 @@
+.style-section {
+	margin-bottom: 50px;
+}
+
+.style-section > header h1 {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	border-bottom: 1px solid #888;
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+.outer-wrap {
+	margin-bottom: 25px;
+}
+
+.card {
+	margin-bottom: 0;
+}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+.card-section .align-center p,
+.card-section .align-center li,
+.card-section .align-center blockquote,
+.card-section .align-center header {
+	text-align: left;
+}
+
+.toggle {
+	border: 1px solid #e6e6e6;
+	border-top: 0;
+	background: #e6e6e6;
+	float: left;
+	margin-top: -1px;
+}
+
+.toggle:hover {
+	background: #d2d2d2;
+}
+
+button.info {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 10px 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+p.intro {
+	font-size: 20px;
+}
+
+.color {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.color p.reverse {
+	color: #fff;
+}
+
+.color.blue-dark {
+	background: #29353f;
+}
+
+.color.blue-light {
+	background: #97b9c1;
+}
+
+.color.green {
+	background: #4e8b8d;
+}
+
+.color.beige {
+	background: #d5cbc1;
+}
+
+.color p {
+	text-align: center;
+}
+
+#layouts ul {
+	clear: both;
+}
+
+img {
+	margin-bottom: 20px;
+}
+
+img.align-left {
+	margin-right: 20px;
+}
+
+img.align-right {
+	margin-left: 20px;
+}
