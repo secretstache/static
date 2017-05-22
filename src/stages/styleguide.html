@@ -10,11 +10,28 @@
   </head>
   <body>
 
+  <div data-sticky-container style="margin-bottom: 40px;">
+    <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+      <div class="row align-middle">
+        <div class="column small-12">
+          <div class="menu-centered">
+            <ul class="menu  text-center" data-magellan data-threshold="0" data-bar-offset="60">
+              <li><a href="#brand-usage">Logo &amp; Brand Usage</a></li>
+              <li><a href="#color-palette">Color Palette</a></li>
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#layouts">Layouts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="row">
 
       <div class="inner">
     
-        <section id="brand-usage" class="style-section column">
+        <section id="brand-usage" class="style-section column" data-magellan-target="brand-usage">
           
           <header>
             <h1>Logo &amp; Brand Usage</h1>
@@ -22,7 +39,7 @@
       
         </section>
 
-        <section id="color-palette" class="style-section column">
+        <section id="color-palette" class="style-section column" data-magellan-target="color-palette">
           
           <header>
             <h1>Color Palette</h1>
@@ -52,14 +69,18 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
+              <button class="info" data-toggle="tab1">Usage &amp; Info</button>
+            </div>
+
+            <div id="tab1" class="info-content" data-toggler=".expanded">
+                Expanded content
             </div>
 
           </div>
 
         </section>
 
-        <section id="typography" class="style-section column">
+        <section id="typography" class="style-section column" data-magellan-target="typography">
           
           <header>
             <h1>Typography</h1>
@@ -80,8 +101,12 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div>  
+              <button class="info" data-toggle="tab2">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab2" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>      
 
@@ -101,8 +126,12 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div> 
+              <button class="info" data-toggle="tab3">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab3" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>
 
@@ -122,8 +151,12 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div> 
+              <button class="info" data-toggle="tab4">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab4" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>
 
@@ -142,9 +175,13 @@
             
             </div>
 
-            <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div> 
+           <div class="toggle tab">
+              <button class="info" data-toggle="tab5">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab5" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>
 
@@ -164,8 +201,12 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div> 
+              <button class="info" data-toggle="tab6">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab6" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>
 
@@ -185,8 +226,12 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div> 
+              <button class="info" data-toggle="tab7">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab7" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>
 
@@ -216,14 +261,18 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
-            </div> 
+              <button class="info" data-toggle="tab8">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab8" class="info-content" data-toggler=".expanded">
+                Expanded content
+            </div>
 
           </div>
       
         </section>
 
-        <section id="layouts" class="style-section column">
+        <section id="layouts" class="style-section column" data-magellan-target="layouts">
           
           <header>
             <h1>Default Layouts</h1>
@@ -286,7 +335,11 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
+              <button class="info" data-toggle="tab9">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab9" class="info-content" data-toggler=".expanded">
+                Expanded content
             </div>
 
           </div>
@@ -336,7 +389,11 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
+              <button class="info" data-toggle="tab10">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab10" class="info-content" data-toggler=".expanded">
+                Expanded content
             </div>
 
           </div>
@@ -399,7 +456,11 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
+              <button class="info" data-toggle="tab11">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab11" class="info-content" data-toggler=".expanded">
+                Expanded content
             </div>
 
           </div>
@@ -475,7 +536,11 @@
             </div>
 
             <div class="toggle tab">
-              <button class="info">Usage &amp; Info</button>
+              <button class="info" data-toggle="tab12">Usage &amp; Info</button>
+            </div>
+            
+            <div id="tab12" class="info-content" data-toggler=".expanded">
+                Expanded content
             </div>
 
           </div>

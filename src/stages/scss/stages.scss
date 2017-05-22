@@ -38,8 +38,8 @@
 	border: 1px solid #e6e6e6;
 	border-top: 0;
 	background: #e6e6e6;
-	float: left;
 	margin-top: -1px;
+	display: inline-block;
 }
 
 .toggle:hover {
@@ -54,6 +54,13 @@ button.info {
 	cursor: pointer;
 }
 
+.info-content {
+	display: none;
+	margin-top: 10px;
+}
+.info-content.expanded {
+	display: block;
+}
 p.intro {
 	font-size: 20px;
 }
@@ -105,3 +112,16 @@ img.align-left {
 img.align-right {
 	margin-left: 20px;
 }
+
+.menu > li > a {
+  color: #fff;
+  background: #484848;
+  margin: 0 5px;
+  border-radius: 2px;
+  
+  &.active {
+  	background: #5cb2f2;
+  }
+}
+
+    

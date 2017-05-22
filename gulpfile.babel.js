@@ -45,12 +45,6 @@ function copy() {
     .pipe(gulp.dest(PATHS.dist + '/assets'));
 }
 
-// SSM Stages
-function stages() {
-  return gulp.src('src/stages/*.html')
-    .pipe(gulp.dest(PATHS.dist + '/stages'));
-}
-
 // Copy page templates into finished HTML files
 function pages() {
   return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
@@ -98,20 +92,6 @@ function sass() {
     .pipe(browser.reload({ stream: true }));
 }
 
-function stagesSass() {
-  return gulp.src('src/stages/scss/stages.css')
-    .pipe($.sourcemaps.init())
-    .pipe($.autoprefixer({
-      browsers: COMPATIBILITY
-    }))
-    // Comment in the pipe below to run UnCSS in production
-    //.pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
-    .pipe($.if(PRODUCTION, $.cssnano()))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
-    .pipe(browser.reload({ stream: true }));
-}
-
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
@@ -150,6 +130,24 @@ function reload(done) {
   done();
 }
 
+// Stages copy to the dist folder
+function stages() {
+  return gulp.src('src/stages/*.html')
+    .pipe(gulp.dest(PATHS.dist + '/stages'));
+}
+
+// Stages sass
+function stagesSass() {
+  return gulp.src('src/stages/scss/*')
+    .pipe($.sass()
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: COMPATIBILITY
+    }))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(browser.reload({ stream: true }));
+}
+
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
@@ -160,5 +158,5 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   // gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
   gulp.watch('src/stages/**/*.html').on('all', gulp.series(stages, browser.reload));
-  gulp.watch('src/stages/scss/**/*.css').on('all', stagesSass);
+  gulp.watch('src/stages/scss/*').on('all', gulp.series(stagesSass, browser.reload));
 }
