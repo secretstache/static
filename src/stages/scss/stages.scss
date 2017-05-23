@@ -1,3 +1,5 @@
+
+
 .style-section {
 	margin-bottom: 50px;
 }
@@ -56,6 +58,7 @@ button.info {
 
 .info-content {
 	display: none;
+	font-size: 14px;
 	padding: 1rem;
 	background: #fff;
 	border: 1px solid #e6e6e6;
@@ -117,13 +120,14 @@ img.align-right {
 	margin-left: 20px;
 }
 
-.menu > li > a {
+.title-bar .menu > li > a {
   color: #fff;
   background: #484848;
   margin: 0 5px;
   border-radius: 2px;
   
-  &.active {
+  &.active,
+  &:hover {
   	background: #5cb2f2;
   }
 }
