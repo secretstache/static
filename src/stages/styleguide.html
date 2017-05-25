@@ -11,7 +11,7 @@
   <body>
 
   <div data-sticky-container style="margin-bottom: 40px;">
-    <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+    <div class="title-bar" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
       <div class="row align-middle">
         <div class="column small-12">
           <div class="menu-centered">
@@ -90,8 +90,8 @@
             <div class="card">
 
               <div class="card-divider clearfix">
-                <span class="align-left">Header One <code>h1</code></span>
-                <span class="align-right"><code>.hero-unit.headline, .page-header.headline</code></span>
+                <span class="description">Page Headline</span>
+                <span class="syntax"><code>.hero-unit.headline</code></span>
               </div>
               <div class="card-section">
                 <h1>The Quick Brown Fox Jumped Over The Lazy Dog</h1>
@@ -112,8 +112,8 @@
             <div class="card">
               
               <div class="card-divider clearfix">
-                <span class="align-left">Header Two <code>h2</code></span>
-                <span class="align-right"><code>.hero-unit.subheadline, .page-header.subheadline, section.headline</code></span>
+                <span class="description">Page Subheadline, Section Headline</span>
+                <span class="syntax"><code>.hero-unit.subheadline, .section-header.headline</code></span>
               </div>
               
               <div class="card-section">
@@ -135,8 +135,8 @@
             <div class="card">
               
               <div class="card-divider clearfix">
-                <span class="align-left">Header Three <code>h3</code></span>
-                <span class="align-right"><code>section.subheadline, .column.headline</code></span>
+                <span class="description">Section Subheadline, Column Headline</span>
+                <span class="syntax"><code>section.subheadline, .column.headline</code></span>
               </div>
               
               <div class="card-section">
@@ -158,8 +158,8 @@
             <div class="card">
 
               <div class="card-divider clearfix">
-                <span class="align-left">Header Four <code>h4</code></span>
-                <span class="align-right"><code>aside.headline</code></span>
+                <span class="description">Sidebar Headline</span>
+                <span class="syntax"><code>aside.sidebar .headline</code></span>
               </div>
 
               <div class="card-section">
@@ -181,8 +181,8 @@
             <div class="card">
 
               <div class="card-divider clearfix">
-                <span class="align-left">Intro Text <code>p</code></span>
-                <span class="align-right"><code>p.intro</code></span>
+                <span class="description">Intro Text</span>
+                <span class="syntax"><code>p.intro</code></span>
               </div>
 
               <div class="card-section">
@@ -204,8 +204,8 @@
             <div class="card">
 
               <div class="card-divider clearfix">
-                <span class="align-left">Paragraph Text <code>p</code></span>
-                <span class="align-right"><code>p</code></span>
+                <span class="description">Default Paragraph Text</span>
+                <span class="syntax"><code>p</code></span>
               </div>
 
               <div class="card-section">
@@ -227,19 +227,19 @@
             <div class="card">
 
               <div class="card-divider clearfix">
-                <span class="align-left">Buttons</span>
-                <span class="align-right"><code>a.button, button.button, input[type="submit"]</code></span>
+                <span class="description">Buttons</span>
+                <span class="syntax"><code>a.button, button.button, input[type="submit"]</code></span>
               </div>
 
               <div class="card-section">
-                <div class="row align-middle medium-expand align-center">
-                  <div class="column">
+                <div class="row align-middle align-center">
+                  <div class="column small-12 medium-expand">
                     <a class="button large">Submit</a>
                   </div>
-                  <div class="column">
+                  <div class="column small-12 medium-expand">
                     <a class="button medium">Submit</a>
                   </div>
-                  <div class="column">
+                  <div class="column small-12 medium-expand">
                     <a class="button small">Submit</a>
                   </div>
                 </div>
@@ -339,16 +339,13 @@
 
               <div class="card-section">
                 
-                <div class="row align-center">
+                <div class="row has-2-cols align-center align-middle">
     
-                  <div class="small-12 medium-6 column">
+                  <div class="small-12 medium-6 column col-1">
 
                     <div class="inner">
-                      <header class="component">
-                        <h3 class="headline">Column One Header</h3>
-                      </header>
-                      <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                      <div class="component image stack-order-1">
+                        <img src="http://placehold.it/1000x600/ccc/000.png" />
                       </div>
                     </div>
   
@@ -357,7 +354,7 @@
                   <div class="small-12 medium-6 column">
 
                     <div class="inner">
-                      <header class="component">
+                      <header class="component stack-order-1">
                         <h3 class="headline">Column Two Header, Which is a bit Longer</h3>
                       </header>
                       <div class="component default">
@@ -392,16 +389,16 @@
 
               <div class="card-section">
                 
-                <div class="row align-center">
+                <div class="row has-3-cols align-center">
     
-                  <div class="small-12 medium-4 column">
+                  <div class="small-12 medium-4 column col-1">
 
                     <div class="inner">
-                      <header class="component">
-                        <h3 class="headline">Column One Header</h3>
+                      <header class="component stack-order-1">
+                        <h3 class="headline">01. Step One</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   
@@ -410,11 +407,11 @@
                   <div class="small-12 medium-4 column">
 
                     <div class="inner">
-                      <header class="component">
-                        <h3 class="headline">Column Two Header, Which is a bit Longer</h3>
+                      <header class="component stack-order-1">
+                        <h3 class="headline">02. Step Two</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>\Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   
@@ -423,11 +420,11 @@
                   <div class="small-12 medium-4 column">
 
                     <div class="inner">
-                      <header class="component">
-                        <h3 class="headline">Column Three Header</h3>
+                      <header class="component stack-order-1">
+                        <h3 class="headline">03. Step Three</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   
@@ -457,16 +454,16 @@
 
               <div class="card-section">
                 
-                <div class="row align-center">
+                <div class="row has-4-cols align-center">
     
-                  <div class="small-12 medium-3 column">
+                  <div class="small-12 medium-3 column col-1">
 
                     <div class="inner">
-                      <header class="component">
+                      <header class="component stack-order-1">
                         <h3 class="headline">Column One Header</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   
@@ -475,11 +472,11 @@
                   <div class="small-12 medium-3 column">
 
                     <div class="inner">
-                      <header class="component">
-                        <h3 class="headline">Column Two Header, Which is a bit Longer</h3>
+                      <header class="component stack-order-1">
+                        <h3 class="headline">Column Two Header</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   
@@ -488,11 +485,11 @@
                   <div class="small-12 medium-3 column">
 
                     <div class="inner">
-                      <header class="component">
+                      <header class="component stack-order-1">
                         <h3 class="headline">Column Three Header</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   
@@ -501,11 +498,11 @@
                   <div class="small-12 medium-3 column">
 
                     <div class="inner">
-                      <header class="component">
+                      <header class="component stack-order-1">
                         <h3 class="headline">Column Four Header</h3>
                       </header>
                       <div class="component default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum magna libero, vel dignissim quam cursus nec. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum ornare lacus, vitae porttitor lorem tempor eget.</p>
                       </div>
                     </div>
   

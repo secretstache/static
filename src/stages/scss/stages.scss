@@ -21,19 +21,20 @@
 	margin-bottom: 0;
 }
 
-.align-left {
+.description {
+	display: block;
+	@media screen and (min-width: 40em) {
 	float: left;
+	}
 }
 
-.align-right {
+.syntax {
+	display: block;
+	margin-top: 10px;
+	@media screen and (min-width: 40em) {
 	float: right;
-}
-
-.card-section .align-center p,
-.card-section .align-center li,
-.card-section .align-center blockquote,
-.card-section .align-center header {
-	text-align: left;
+	margin-top: 0;
+	}
 }
 
 .toggle {
@@ -106,18 +107,6 @@ p.intro {
 
 #layouts ul {
 	clear: both;
-}
-
-img {
-	margin-bottom: 20px;
-}
-
-img.align-left {
-	margin-right: 20px;
-}
-
-img.align-right {
-	margin-left: 20px;
 }
 
 .title-bar .menu > li > a {

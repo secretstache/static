@@ -3,6 +3,15 @@
 	&:first-of-type {
 		margin-top: 0;
 	}
+  &.align-left {
+  text-align: left;
+}
+  &.align-center {
+    text-align: center;
+  }
+  &.align-right {
+    text-align: right;
+  }
 }
 
 .row.has-one-column .component {
