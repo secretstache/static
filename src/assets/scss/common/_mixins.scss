@@ -80,7 +80,7 @@
 
 @mixin responsive-type( $size ) {
 
-  @if ( ( $size * .75 ) < rem-calc(16) ) {
+  @if ( ( $size * .75 ) < 16 ) {
     font-size: rem-calc(16);
   } @else {
     font-size: rem-calc($size * .75);
