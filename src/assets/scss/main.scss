@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import 'common/settings';
+@import 'common/foundation';
 @import 'common/style-guide';
 @import 'foundation';
 @import 'motion-ui';
@@ -59,7 +59,9 @@
 @import "layouts/header";
 @import "layouts/footer";
 
-@import "page-builder/content-blocks/index";
+@import "page-builder/sections/index";
+
+@import "page-builder/columns/index";
 
 @import "page-builder/templates/hero-unit";
 @import "page-builder/templates/block-grid";
