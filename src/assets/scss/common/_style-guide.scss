@@ -6,6 +6,8 @@ $header-height: rem-calc(60); // If applicable
 $base-padding: rem-calc(40);
 $base-margin: rem-calc(40);
 $outer-bg-color: #eee; // If applicable
+$gutter-small: map-get($grid-column-gutter, small);
+$gutter-medium: map-get($grid-column-gutter, medium);
 
 // Typography
 $primary-font-family: $body-font-family; // from F6 settings

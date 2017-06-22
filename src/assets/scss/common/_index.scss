@@ -5,25 +5,14 @@ body {
   font-weight: normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  @include responsive-margin('bottom', $base-margin/2);
-}
-
-p.intro {
-  @include responsive-type(20);
-}
-
-p:last-of-type {
-  margin-bottom: 0;
-}
-
 img {
   display: block;
   margin-bottom: rem-calc(20);
+}
+
+img[class*='wp-image-'],
+img[class^='wp-image-'] {
+    margin-bottom: rem-calc(20);
 }
 
 img.align-left,
